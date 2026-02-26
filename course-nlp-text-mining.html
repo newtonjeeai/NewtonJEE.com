@@ -6,6 +6,7 @@
 <title>NLP & Text Mining — Newton JEE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
 <style>
   :root {
     --bg: #0a0c12;
@@ -282,15 +283,15 @@
     .schedule-grid { grid-template-columns: 1fr; }
     .pipeline { min-width: 520px; }
   }
-
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
-  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#blog">Blog</a></nav>
+  <a href="newtonjee-homepage.html class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
+  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#faq">FAQ</a></nav>
+  <button class="menu-toggle">☰</button>
   <button class="btn-header" onclick="document.getElementById('enrol-section').scrollIntoView({behavior:'smooth'})">Enrol Now →</button>
 </header>
 
@@ -795,19 +796,19 @@
         <div class="sec-label">// What's Next</div>
         <div class="sec-title">Students Also Take</div>
         <div class="related-grid">
-          <a href="course-generative-ai-llms.html" class="related-card">
+          <a href="/courses/generative-ai" class="related-card">
             <span class="rel-tag">Advanced · Natural Next Step</span>
             <h4>Generative AI & LLMs</h4>
             <p>NLP is the foundation. GenAI is the frontier. Together they earn both Gold badges — the most valued credential combination.</p>
             <div><span class="rel-mrp">₹16,000</span><span class="rel-price">₹8,999</span></div>
           </a>
-          <a href="course-machine-learning.html" class="related-card">
+          <a href="/courses/machine-learning" class="related-card">
             <span class="rel-tag">Intermediate · Strengthens NLP</span>
             <h4>Machine Learning Mastery</h4>
             <p>Prerequisite-level ML knowledge. If you haven't done this yet, it directly strengthens your NLP model evaluation skills.</p>
             <div><span class="rel-mrp">₹14,000</span><span class="rel-price">₹7,999</span></div>
           </a>
-          <a href="newtonjee-pricing.html#bundles" class="related-card">
+          <a href="/pricing#bundles" class="related-card">
             <span class="rel-tag">Bundle · Best Value</span>
             <h4>GenAI Bundle</h4>
             <p>ML + NLP + GenAI — the complete language AI path for ₹21,999. Save ₹20,001 vs buying separately.</p>
@@ -873,5 +874,6 @@
   }, { threshold: 0.06 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+<script src="shared.js"></script>
 </body>
 </html>

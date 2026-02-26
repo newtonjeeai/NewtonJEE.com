@@ -6,6 +6,7 @@
 <title>Computer Vision & Image Processing — Newton JEE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
 <style>
   :root {
     --bg: #0a0c12;
@@ -317,15 +318,15 @@
   @media (max-width: 580px) {
     .ip-pipeline, .domains-grid, .schedule-grid { grid-template-columns: 1fr; }
   }
-
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
-  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#blog">Blog</a></nav>
+  <a href="newtonjee-homepage.html class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
+  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#faq">FAQ</a></nav>
+  <button class="menu-toggle">☰</button>
   <button class="btn-header" onclick="document.getElementById('enrol-section').scrollIntoView({behavior:'smooth'})">Enrol Now →</button>
 </header>
 
@@ -916,19 +917,19 @@
         <div class="sec-label">// Complete Your Path</div>
         <div class="sec-title">Build Your Full Credential Stack</div>
         <div class="related-grid">
-          <a href="course-deep-learning-cv.html" class="related-card">
+          <a href="/courses/deep-learning-cv" class="related-card">
             <span class="rel-tag">Intermediate · Foundation Pair</span>
             <h4>Deep Learning & Neural Networks</h4>
             <p>The Silver-level deep learning foundation. Together with this Gold CV course you hold two complementary badges that form a complete CV engineering signal.</p>
             <div><span class="rel-mrp">₹14,000</span><span class="rel-price">₹7,999</span></div>
           </a>
-          <a href="course-mlops-ai-engineering.html" class="related-card">
+          <a href="/courses/mlops" class="related-card">
             <span class="rel-tag">Advanced · Deploy What You Build</span>
             <h4>MLOps & AI Engineering</h4>
             <p>CV models in production need monitoring, CI/CD, and containerisation. MLOps is the natural completion of any specialised AI course.</p>
             <div><span class="rel-mrp">₹14,000</span><span class="rel-price">₹7,999</span></div>
           </a>
-          <a href="newtonjee-pricing.html#bundles" class="related-card">
+          <a href="/pricing#bundles" class="related-card">
             <span class="rel-tag">Bundle · Best Value</span>
             <h4>Full Stack AI Engineer</h4>
             <p>All 8 courses — Bronze through Platinum — for ₹54,999. Every badge, every domain. The complete transformation, one price.</p>
@@ -994,5 +995,6 @@
   }, { threshold: 0.06 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+<script src="shared.js"></script>
 </body>
 </html>

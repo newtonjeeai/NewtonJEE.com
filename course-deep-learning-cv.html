@@ -6,6 +6,7 @@
 <title>Deep Learning & Computer Vision — Newton JEE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
 <style>
   :root {
     --bg: #0a0c12;
@@ -311,15 +312,15 @@
   @media (max-width: 580px) {
     .schedule-grid, .arch-specs { grid-template-columns: 1fr; }
   }
-
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
-  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#blog">Blog</a></nav>
+  <a href="newtonjee-homepage.html class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
+  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#faq">FAQ</a></nav>
+  <button class="menu-toggle">☰</button>
   <button class="btn-header" onclick="document.getElementById('enrol-section').scrollIntoView({behavior:'smooth'})">Enrol Now →</button>
 </header>
 
@@ -476,7 +477,7 @@
             </div>
             <div class="arch-specs">
               <div class="arch-spec"><span class="as-val">~45 FPS</span><span class="as-lbl">Inference Speed</span></div>
-              <div class="arch-spec"><span class="as-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc0ecfded9d8398">[email&#160;protected]</a></span><span class="as-lbl">Metric Used</span></div>
+              <div class="arch-spec"><span class="as-val">mAP@0.5</span><span class="as-lbl">Metric Used</span></div>
               <div class="arch-spec"><span class="as-val">Week 5</span><span class="as-lbl">Built In</span></div>
             </div>
             <div class="arch-usecases">
@@ -667,7 +668,7 @@
             <li>YOLOv5 architecture walkthrough and configuration</li>
             <li>Label custom data with Roboflow (free tier)</li>
             <li>Fine-tune YOLOv5 on custom dataset</li>
-            <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="731e322333435d46">[email&#160;protected]</a> evaluation, precision-recall curves</li>
+            <li>mAP@0.5 evaluation, precision-recall curves</li>
             <li>Live inference: webcam demo in OpenCV</li>
           </ul></div>
         </div>
@@ -879,19 +880,19 @@
         <div class="sec-label">// What's Next</div>
         <div class="sec-title">Students Also Take</div>
         <div class="related-grid">
-          <a href="course-nlp-text-mining.html" class="related-card">
+          <a href="/courses/nlp-text-mining" class="related-card">
             <span class="rel-tag">Intermediate · Complementary</span>
             <h4>NLP & Text Mining</h4>
             <p>Pair CV with NLP — together they cover the two most powerful modalities in modern AI.</p>
             <div><span class="rel-mrp">₹12,000</span><span class="rel-price">₹6,999</span></div>
           </a>
-          <a href="course-generative-ai-llms.html" class="related-card">
+          <a href="/courses/generative-ai" class="related-card">
             <span class="rel-tag">Advanced · Natural Next Step</span>
             <h4>Generative AI & LLMs</h4>
             <p>Multimodal AI (vision + language) is the frontier. This course sets up your LLM foundations.</p>
             <div><span class="rel-mrp">₹16,000</span><span class="rel-price">₹8,999</span></div>
           </a>
-          <a href="newtonjee-pricing.html#bundles" class="related-card">
+          <a href="/pricing#bundles" class="related-card">
             <span class="rel-tag">Bundle · Best Value</span>
             <h4>Full Stack AI Engineer</h4>
             <p>All 8 courses including this one — earn all 4 LinkedIn badges for ₹54,999. Save ₹46,001.</p>
@@ -942,7 +943,7 @@
 
 <a href="https://wa.me/919XXXXXXXXX" class="wa-float">💬</a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Curriculum accordion
   document.querySelectorAll('.week-header').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -959,4 +960,16 @@
       document.querySelectorAll('.arch-tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.arch-panel').forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
-      document.getElementById('panel-' + tab.dataset.pa
+      document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+    });
+  });
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+<script src="shared.js"></script>
+</body>
+</html>

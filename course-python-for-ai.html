@@ -6,6 +6,7 @@
 <title>Python for AI & Data Science — Newton JEE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
 <style>
   :root {
     --bg: #0a0c12;
@@ -466,20 +467,20 @@
     .breadcrumb { padding: 14px 24px; }
     .hero-left { padding-bottom: 40px; }
   }
-
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="acc">JEE</span></a>
+  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="accent">JEE</span></a>
   <nav>
-    <a href="#">Courses</a>
-    <a href="#">Pricing</a>
+    <a href="newtonjee-homepage.html#courses">Courses</a>
+    <a href="newtonjee-pricing.html">Pricing</a>
     <a href="newtonjee-homepage.html#certifications">Certifications</a>
-    <a href="newtonjee-homepage.html#blog">Blog</a>
+    <a href="newtonjee-homepage.html#faq">FAQ</a>
   </nav>
+  <button class="menu-toggle">☰</button>
   <button class="btn-header" onclick="document.getElementById('enrol-section').scrollIntoView({behavior:'smooth'})">Enrol Now →</button>
 </header>
 
@@ -983,5 +984,6 @@
   }, { threshold: 0.06 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+<script src="shared.js"></script>
 </body>
 </html>

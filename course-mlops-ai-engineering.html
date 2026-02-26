@@ -6,6 +6,7 @@
 <title>MLOps & AI Engineering — Newton JEE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
 <style>
   :root {
     --bg: #0a0c12;
@@ -20,7 +21,7 @@
     --border: rgba(255,255,255,0.07);
     --card: rgba(255,255,255,0.03);
     /* course accent: industrial steel-blue — infra/ops feel */
-    --acc: #8892a4;
+    --acc: #64748b;
     --acc-bright: #94a3b8;
     --acc-hi: #e2e8f0;
     --acc-glow: rgba(100,116,139,0.12);
@@ -59,7 +60,7 @@
   /* Unique: terminal/CLI aesthetic grid — infra/ops feel */
   .hero-terminal-bg {
     position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(to right, transparent 40%, rgba(248,249,252,0.7) 100%);
+    background: linear-gradient(to right, transparent 40%, rgba(10,12,18,0.6) 100%);
   }
   .hero-terminal-bg::before {
     content: '';
@@ -340,15 +341,15 @@
   @media (max-width: 580px) {
     .tools-grid, .schedule-grid { grid-template-columns: 1fr; }
   }
-
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
-  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#blog">Blog</a></nav>
+  <a href="newtonjee-homepage.html class="logo"><div class="logo-icon">N</div>Newton<span class="acc-c">JEE</span></a>
+  <nav><a href="newtonjee-homepage.html#courses">Courses</a><a href="newtonjee-pricing.html">Pricing</a><a href="newtonjee-homepage.html#certifications">Certifications</a><a href="newtonjee-homepage.html#faq">FAQ</a></nav>
+  <button class="menu-toggle">☰</button>
   <button class="btn-header" onclick="document.getElementById('enrol-section').scrollIntoView({behavior:'smooth'})">Enrol Now →</button>
 </header>
 
@@ -933,19 +934,19 @@
         <div class="sec-label">// What's Next</div>
         <div class="sec-title">Students Also Take</div>
         <div class="related-grid">
-          <a href="course-machine-learning.html" class="related-card">
+          <a href="/courses/machine-learning" class="related-card">
             <span class="rel-tag">Intermediate · Foundation</span>
             <h4>Machine Learning Mastery</h4>
             <p>Build the models that this course deploys. The natural prerequisite for anyone new to ML engineering.</p>
             <div><span class="rel-mrp">₹14,000</span><span class="rel-price">₹7,999</span></div>
           </a>
-          <a href="course-generative-ai-llms.html" class="related-card">
+          <a href="/courses/generative-ai" class="related-card">
             <span class="rel-tag">Advanced · Pairs Well</span>
             <h4>Generative AI & LLMs</h4>
             <p>Build GenAI apps. MLOps teaches you how to deploy and monitor them. The combination is unbeatable.</p>
             <div><span class="rel-mrp">₹16,000</span><span class="rel-price">₹8,999</span></div>
           </a>
-          <a href="newtonjee-pricing.html#bundles" class="related-card">
+          <a href="/pricing#bundles" class="related-card">
             <span class="rel-tag">Bundle · Maximum Value</span>
             <h4>Full Stack AI Engineer</h4>
             <p>All 8 courses — every badge from Bronze to Platinum — for ₹54,999. The complete transformation.</p>
@@ -1011,5 +1012,6 @@
   }, { threshold: 0.06 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+<script src="shared.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 <title>Statistics & Math for ML — Newton JEE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
 <style>
   :root {
     --bg: #0a0c12;
@@ -471,20 +472,20 @@
     .schedule-grid, .ml-connect-grid { grid-template-columns: 1fr; }
     .concept-flow { gap: 4px; }
   }
-
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="acc">JEE</span></a>
+  <a href="newtonjee-homepage.html" class="logo"><div class="logo-icon">N</div>Newton<span class="accent">JEE</span></a>
   <nav>
-    <a href="#">Courses</a>
-    <a href="#">Pricing</a>
+    <a href="newtonjee-homepage.html#courses">Courses</a>
+    <a href="newtonjee-pricing.html">Pricing</a>
     <a href="newtonjee-homepage.html#certifications">Certifications</a>
-    <a href="newtonjee-homepage.html#blog">Blog</a>
+    <a href="newtonjee-homepage.html#faq">FAQ</a>
   </nav>
+  <button class="menu-toggle">☰</button>
   <button class="btn-header" onclick="document.getElementById('enrol-section').scrollIntoView({behavior:'smooth'})">Enrol Now →</button>
 </header>
 
@@ -534,7 +535,7 @@
       <div class="enrol-emi">or ₹333/month · 12-month no-cost EMI</div>
       <div class="prereq-box">
         <span class="pi">💡</span>
-        <span>Best taken alongside or after <a href="course-python-for-ai.html">Python for AI</a>. Both courses together earn your Bronze badge.</span>
+        <span>Best taken alongside or after <a href="/courses/python-for-ai">Python for AI</a>. Both courses together earn your Bronze badge.</span>
       </div>
       <button class="btn-enrol-main">⚡ Enrol Now</button>
       <button class="btn-demo-sm">📅 Book Free Demo</button>
@@ -879,7 +880,7 @@
             <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:16px;">or ₹333/month · 12-month no-cost EMI</div>
             <div class="prereq-box" style="margin-bottom:20px;">
               <span class="pi">💡</span>
-              <span>Save ₹7,001 by bundling with Python for AI in the <a href="newtonjee-pricing.html#bundles">Foundation Bundle — ₹7,999</a></span>
+              <span>Save ₹7,001 by bundling with Python for AI in the <a href="/pricing#bundles">Foundation Bundle — ₹7,999</a></span>
             </div>
             <div style="display:flex; flex-direction:column; gap:10px; max-width:340px;">
               <button class="btn-enrol-main" style="max-width:100%">⚡ Enrol Now — Pay ₹3,999</button>
@@ -946,19 +947,19 @@
         <div class="sec-label">// What's Next</div>
         <div class="sec-title">Students Also Take</div>
         <div class="related-grid">
-          <a href="course-python-for-ai.html" class="related-card">
+          <a href="/courses/python-for-ai" class="related-card">
             <span class="rel-tag">Beginner · Pair Together</span>
             <h4>Python for AI & Data Science</h4>
             <p>Take both to earn the Bronze badge. The Python course is the practical complement to this theoretical foundation.</p>
             <div><span class="rel-mrp">₹8,000</span><span class="rel-price">₹4,999</span></div>
           </a>
-          <a href="course-machine-learning.html" class="related-card">
+          <a href="/courses/machine-learning" class="related-card">
             <span class="rel-tag">Intermediate · Natural Next Step</span>
             <h4>Machine Learning Mastery</h4>
             <p>Apply the maths you've learned here to build real ML models — from regression to random forests.</p>
             <div><span class="rel-mrp">₹14,000</span><span class="rel-price">₹7,999</span></div>
           </a>
-          <a href="newtonjee-pricing.html#bundles" class="related-card">
+          <a href="/pricing#bundles" class="related-card">
             <span class="rel-tag">Bundle · Best Value</span>
             <h4>Foundation Bundle</h4>
             <p>Python + Statistics together — earn the Bronze badge for ₹7,999 instead of ₹8,998. Save ₹7,001.</p>
@@ -980,7 +981,7 @@
         <div class="enrol-emi">or ₹333/month · 12-month no-cost EMI</div>
         <div class="prereq-box">
           <span class="pi">💡</span>
-          <span>Best taken with <a href="course-python-for-ai.html">Python for AI</a> to earn the Bronze badge.</span>
+          <span>Best taken with <a href="/courses/python-for-ai">Python for AI</a> to earn the Bronze badge.</span>
         </div>
         <button class="btn-enrol-main">⚡ Enrol Now</button>
         <button class="btn-demo-sm">📅 Book Free Demo</button>
@@ -1030,5 +1031,6 @@
   }, { threshold: 0.06 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+<script src="shared.js"></script>
 </body>
 </html>
